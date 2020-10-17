@@ -6,18 +6,18 @@
     remote="aosp" sync-j="4" />
   <remote fetch="https://github.com/tnakamur" name="sunfish" />
 
-  <project path="build" name="kernel/build" revision="2cdbe51739d2b31e4c5d480590197cc10359f3f6" />
-  <project path="private/msm-google" name="android_kernel_google_sunfish" remote="sunfish" revision="android-10.0">
+  <project path="build" name="android_build" remote="sunfish" revision="android-10.0" />
+  <project path="private/msm-google" name="android_kernel_google_sunfish" remote="sunfish" revision="tkernel-10">
     <linkfile src="build.config.no-cfi" dest="build.config" />
   </project>
-  <project path="private/msm-google/techpack/audio" name="kernel/msm-extra" />
+  <!--<project path="private/msm-google/techpack/audio" name="kernel/msm-extra" />
   <project path="private/msm-google-modules/data-kernel" name="kernel/msm-modules/data-kernel" />
   <project path="private/msm-google-modules/wlan/qca-wifi-host-cmn" name="kernel/msm-modules/qca-wfi-host-cmn" />
   <project path="private/msm-google-modules/wlan/qcacld-3.0" name="kernel/msm-modules/qcacld" />
   <project path="private/msm-google-modules/wlan/fw-api" name="kernel/msm-modules/wlan-fw-api" />
-  <!--<project path="private/msm-google-modules/touch/fts" name="kernel/msm-modules/fts_touch" />-->
+  <project path="private/msm-google-modules/touch/fts" name="kernel/msm-modules/fts_touch" />-->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="pie-release" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="pie-release" clone-depth="1" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="debf6e0c185a02a1cb43bc599c52d2b91445fb1b" clone-depth="1" groups="partner" />
+  <project path="prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="android11-release" clone-depth="1" groups="partner" />
   <project path="prebuilts-master/misc" name="platform/prebuilts/misc" revision="pie-release" clone-depth="1" />
 </manifest>
